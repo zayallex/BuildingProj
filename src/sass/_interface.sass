@@ -1,0 +1,66 @@
+*
+  box-sizing: border-box
+body
+  +reg
+  margin: 0
+img
+  max-width: 100%
+.container
+  width: 1170px
+  margin: auto
+.button
+  border-radius: 10px
+  background-color: #ffd200
+  border: none
+  padding: 18px 30px
+  &:hover
+    background-color: lighten(#ffd200, 10%)
+    cursor: pointer
+    box-shadow: 0 0 2px 2px 
+.section
+  padding: 90px 0
+  &-title
+    font-size: 24px
+    max-width: 500px
+    text-align: center
+  &-subtitle
+    display: block
+    font-size: 16px;
+.input
+  border: 1px solid $border-input
+  padding: 20px 26px
+  font-size: 15px
+  border-radius: 10px
+
+@media (max-width: 1200px)
+  .container
+    width: 760px
+    margin: auto
+@media (max-width: 992px)
+  .button
+    &:hover
+      box-shadow: none 
+@media (max-width: 768px)
+  .container
+    max-width: 560px
+    width: 95%
+    margin: auto
+  .section
+    padding-top: 60px
+    padding-bottom: 60px
+
+@media (max-width: 567px)
+  .container
+    max-width: 320px
+    width: 95%
+    .button
+      font-size: 10px
+      padding: 13px 23px
+
+.error
+  display: block
+  top: 0
+  margin: auto
+  //border: 1px solid red
+  font-weight: 500
+  +bold

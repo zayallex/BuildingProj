@@ -1,0 +1,62 @@
+.navbar
+  padding: 8px 0
+  &-block
+    display: flex
+    justify-content: space-between
+    align-items: center
+  &__info
+    display: flex
+    align-items: center
+    text-align: right
+  &__addres
+    display: flex
+    flex-direction: column
+    +reg
+    font-size: 13px
+  &__button
+    margin-left: 30px
+    outline: none
+    +bold
+    font-size: 13px
+    //font-weight: 400
+  &__phone
+    display: inline-block
+    font-size: 20px
+    font-weight: 400
+    text-decoration: none
+    color: $text-color
+    margin-top: 10px
+
+.riser
+  width: 50px
+  height: 50px
+  max-width: 100%
+  position: fixed
+  top: 90%
+  right: 30px
+
+@media (max-width: 768px)
+  .navbar
+    &-block
+      padding: 19px 0
+    &__contacts
+      display: none
+    &__contacts
+      font-size: 12px
+      padding: 15px 26px
+    &__logo
+      width: 90px
+@media (max-width: 567px)
+  .navbar
+    padding-bottom: 21px
+    &__contacts
+    font-size: 12px
+    padding: 8px 8px
+    &__logo
+      width: 90px
+    &__button
+      width: 137px
+      height: 39px
+      font-size: 10px
+  .special-size
+    font-size: 10px

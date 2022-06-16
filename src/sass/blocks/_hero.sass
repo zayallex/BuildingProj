@@ -1,0 +1,114 @@
+.hero
+  &__background
+    background-color: $secondary
+
+  &-image
+    box-shadow: 7px 5px 10px rgba(0, 0, 0, 0.05), 16px 22px 35px rgba(0, 0, 0, 0.05);
+    justify-content: flex-end
+    max-width: 570px
+    height: 488px
+    margin-left: 15px
+    margin-top: 3px
+    //flex-basis: 52%
+
+  &-block
+    display: flex
+    padding-top: 50px
+    padding-bottom: 52px
+
+  &-text
+    flex-basis: 50%
+    padding-right: 100px
+  
+    &__title
+      font-size: 41px
+      font-weight: 400
+      line-height: 55px
+      margin-bottom: 36px
+      +bold
+
+    &__subtitle
+      display: inline-block
+      font-size: 20px
+      font-weight: 400
+      margin-bottom: 69px
+      +bold
+
+  &-list
+    margin: 0
+    padding: 0   
+    &__item
+      display: flex
+      align-items: center
+      margin-bottom: 25px
+      /*&:last-child  
+        margin-bottom: 0*/
+    &__image
+      width: 40px
+      height: 40px
+      border: 2px solid #ffd200;
+      display: flex
+      align-items: center
+      justify-content: center
+      border-radius: 50%
+      margin-right: 30px
+    &__text
+      max-width: 250px 
+      font-size: 14px
+      font-weight: 400
+      line-height: 24px
+      +reg
+
+@media (max-width: 1200px)
+  .hero
+    &-block
+      flex-direction: column
+    &__list
+      margin-bottom: 44px
+    &__text
+      margin-right: 10px
+@media (max-width: 768px)
+  .down
+    margin-bottom: 38px
+  .hero
+    &-block
+      display: 
+      padding-top: 46px
+      justify-content: space-between
+      flex-direction: column
+    &-text
+      padding-right: 0
+      &__title
+        font-size: 24px
+        line-height: 1.4
+        margin-top: 0
+        margin-bottom: 15px
+        line-height: 28px
+      &__subtitle
+        font-size: 16px
+        margin-bottom: 28px
+        max-width: 80%
+    &-list
+      flex-direction: column
+      &__item
+        &:last-child
+          margin-bottom: 38px
+      &__text
+        font-size: 12px
+        flex-basis: 74%
+      &__item
+        margin-right: 0
+        margin-bottom: 20px
+        width: 92%
+        display: flex
+        //justify-content: space-between
+@media (max-width: 568px)
+  .hero
+    &-image
+      margin: 0
+      padding: 0
+      width: 100%
+      height: 100%
+      left: 0
+    &-list
+      margin-bottom: 38px

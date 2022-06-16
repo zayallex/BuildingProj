@@ -1,0 +1,50 @@
+.pros
+  &-lists
+    display: flex
+    justify-content: space-around
+  &-list
+    width: 370px
+    height: 410px
+    margin-right: 10px
+    background-color: #f7f7f7
+    display: flex
+    justify-content: space-between
+    flex-direction: column
+    &-bold
+      display: inline
+      +bold
+    &__text
+      padding-left: 27px
+      padding-top: 25px
+      font-size: 16px
+      line-height: 23px
+      max-width: 87%
+      +reg
+    &__spec-text
+      padding-left: 27px
+      padding-top: 25px
+      font-size: 16px
+      line-height: 23px
+      max-width: 83%
+      +reg
+@media (max-width: 768px)
+  .pros
+    display: none
+    margin: 0 10px
+    &-lists
+      flex-direction: column
+      margin: auto
+    &-list
+      width: 100%
+      max-width: 370px
+      height: 305px
+      margin: auto
+      margin-bottom: 30px
+      &:last-child
+        margin-bottom: 0
+      &__text
+        font-size: 12px
+        line-height: 17px
+      &__spec-text
+        font-size: 12px
+        line-height: 17px
